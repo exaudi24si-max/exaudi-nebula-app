@@ -10,7 +10,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kalkulator Exaudi Bn"
+        android:text="Kalkulator Exaudi Banjarnahor"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
