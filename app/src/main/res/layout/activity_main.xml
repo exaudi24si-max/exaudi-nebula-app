@@ -49,7 +49,7 @@
         android:id="@+id/btnHitungSegitiga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hitung Luas"
+        android:text="Menghitung Luas"
         app:layout_constraintTop_toBottomOf="@id/etTinggi"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -87,9 +87,10 @@
         android:id="@+id/btnHitungKubus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Hitung Volume"
-        app:layout_constraintTop_toBottomOf="@id/etSisi"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSisi" />
 
     <TextView
         android:id="@+id/tvHasilKubus"
