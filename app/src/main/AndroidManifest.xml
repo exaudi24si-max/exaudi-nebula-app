@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exaudinebula">
         <activity
+            android:name=".FormLogin.LoginResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FormLogin.LoginMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
