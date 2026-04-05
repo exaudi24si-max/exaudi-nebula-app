@@ -30,6 +30,7 @@ class LoginMainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Halo $nama, Selamat Datang!", Toast.LENGTH_SHORT).show()
 
                 // Pindah ke halaman hasil (LoginResultActivity)
+                // Kita panggil class yang tidak pernah kita buat
                 val intent = Intent(this, LoginResultActivity::class.java)
                 // Bonus: Kirim data nama ke halaman berikutnya
                 intent.putExtra("NAMA_USER", nama)
