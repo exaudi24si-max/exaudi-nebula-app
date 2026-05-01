@@ -45,7 +45,7 @@ class LoginMainActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Halo $nama, Selamat Datang!", Toast.LENGTH_SHORT).show()
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, com.example.exaudi_nebula.BaseActivity::class.java)
                 startActivity(intent)
                 finish()
             }

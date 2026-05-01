@@ -7,23 +7,26 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.exaudi_nebula.FormLogin.LoginMainActivity
+import com.example.exaudi_nebula.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivitySplashScreenBinding
     private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         sharedPreferences = getSharedPreferences("UserSession", MODE_PRIVATE)
 
         Handler(Looper.getMainLooper()).postDelayed({
             val isLogin = sharedPreferences.getBoolean("isLogin", false)
 
-            // Diarahkan ke MainActivity sebagai Dashboard Utama
+            // Diarahkan ke BaseActivity sebagai Dashboard Utama dengan Bottom Navigation
             val intent = if (isLogin) {
-                Intent(this, MainActivity::class.java)
+                Intent(this, BaseActivity::class.java)
             } else {
                 Intent(this, LoginMainActivity::class.java)
             }

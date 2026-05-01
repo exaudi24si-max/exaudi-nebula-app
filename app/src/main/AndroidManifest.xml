@@ -30,6 +30,11 @@
             android:name=".MainActivity"
             android:exported="false" />
 
+        <!-- BaseActivity (Host for BottomNavigation) -->
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+
         <!-- KalkulatorActivity (HALAMAN BARU) -->
         <activity
             android:name=".KalkulatorActivity"
