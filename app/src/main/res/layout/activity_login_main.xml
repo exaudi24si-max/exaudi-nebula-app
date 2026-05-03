@@ -18,10 +18,10 @@
     <!-- Circular Logo -->
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
         android:layout_marginTop="40dp"
-        android:src="@drawable/ic_login_logo"
+        android:src="@drawable/logobinadesa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

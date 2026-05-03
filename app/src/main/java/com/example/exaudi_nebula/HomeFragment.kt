@@ -32,6 +32,7 @@ class HomeFragment : Fragment() {
 
         val sharedPreferences = requireContext().getSharedPreferences("UserSession", Context.MODE_PRIVATE)
 
+
         // Sapaan User di Header
         val namaUser = sharedPreferences.getString("NAMA_USER", "Exaudi")
         binding.tvWelcome.text = getString(R.string.welcome_user, namaUser)
