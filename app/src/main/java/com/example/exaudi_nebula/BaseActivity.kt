@@ -44,6 +44,10 @@ class BaseActivity : AppCompatActivity() {
                     loadFragment(ProfileFragment(), true)
                     true
                 }
+                R.id.nav_settings -> {
+                    loadFragment(SettingsFragment(), true)
+                    true
+                }
                 else -> false
             }
         }
