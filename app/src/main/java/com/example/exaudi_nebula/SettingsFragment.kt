@@ -43,9 +43,9 @@ class SettingsFragment : Fragment() {
         )
         binding.lvSettings.adapter = adapter
 
-        // Klik Item ListView
         binding.lvSettings.setOnItemClickListener { _, _, position, _ ->
             Toast.makeText(requireContext(), "Membuka: ${listMenu[position]}", Toast.LENGTH_SHORT).show()
+
         }
 
         // 2. Button Action (Kebutuhan Tugas)
